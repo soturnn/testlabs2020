@@ -4,9 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class KannonDance {
+ public class KannonDance {
 
     private WebDriver driver;
+
+
     private By searchLocator=By.className("search-field");
     private By searchButtonLocator = By.xpath("//*[@id=\"search-2\"]/form/input");
     private By subscribeLocator= By.xpath("//*[@id=\"mc4wp-form-1\"]/div[1]/p[1]/input");
