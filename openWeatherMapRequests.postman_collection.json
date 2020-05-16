@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "abb34958-caef-4383-9985-ac84ca1b3723",
+		"name": "openWeatherMapRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "weatherInSpb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Saint Petersburg&APPID=6a8619ae65a31734d3eee5ccfa69efa1",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Saint Petersburg"
+						},
+						{
+							"key": "APPID",
+							"value": "6a8619ae65a31734d3eee5ccfa69efa1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "geoCoordInCelsiusRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?lat=59.9167&lon=30.25&APPID=6a8619ae65a31734d3eee5ccfa69efa1&units=metric&lang=RU",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.9167"
+						},
+						{
+							"key": "lon",
+							"value": "30.25"
+						},
+						{
+							"key": "APPID",
+							"value": "6a8619ae65a31734d3eee5ccfa69efa1"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "lang",
+							"value": "RU"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "citiesWithinRectZone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/box/city?bbox=28,45,30,49,10&APPID=6a8619ae65a31734d3eee5ccfa69efa1",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"box",
+						"city"
+					],
+					"query": [
+						{
+							"key": "bbox",
+							"value": "28,45,30,49,10"
+						},
+						{
+							"key": "APPID",
+							"value": "6a8619ae65a31734d3eee5ccfa69efa1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
